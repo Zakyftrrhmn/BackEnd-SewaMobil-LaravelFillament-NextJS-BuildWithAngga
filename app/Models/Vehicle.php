@@ -27,7 +27,7 @@ class Vehicle extends Model
         'is_popular'
     ];
 
-    public function setNameAtrribute($value) //Mutator
+    public function setNameAttribute($value) //Mutator
     {
         $this->attributes['name'] = $value;
         $this->attributes['slug'] = Str::slug($value);

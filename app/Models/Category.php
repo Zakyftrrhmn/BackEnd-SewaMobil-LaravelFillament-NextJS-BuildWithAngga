@@ -18,10 +18,10 @@ class Category extends Model
         'icon',
     ];
 
-    public function setNameAtrribute($value)
+    public function setNameAttribute($value)
     {
         $this->attributes['name'] = $value;
-        $this->attributes['slug'] = Str::class($value);
+        $this->attributes['slug'] = Str::slug($value);
     }
 
     public function vehicles(): HasMany
